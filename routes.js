@@ -2,6 +2,8 @@
 const express = require('express')
 //import userController
 const userController = require('./controllers/userController')
+//import bookController
+const bookController = require('./controllers/bookController')
 
 
 //instance
@@ -12,6 +14,7 @@ route.post('/register' , userController.registerController)
 //path for login
 route.post('/login' , userController.loginController)
 
+route.post('/add-book' , bookController.addBookController)
 
 
 //routes export
